@@ -55,7 +55,6 @@ This project is a RESTful API for managing locations and retrieving weather fore
     
     A] Adding a Location
 
-        ```sh
         curl --location --request POST 'http://localhost:3000/api/locations' \
         --header 'Content-Type: application/json' \
         --data-raw '{
@@ -67,17 +66,14 @@ This project is a RESTful API for managing locations and retrieving weather fore
 
     B] Retrieving All Locations
     
-        ```sh
         curl --location --request GET 'localhost:3000/api/locations'
 
     C] Getting Weather Data for a Location
     
-        ```sh
         curl --location --request GET 'http://localhost:3000/api/locations/665bf897d411955856fd13d72'
 
     D] Updating a Location
     
-        ```sh
         curl --location --request PUT 'http://localhost:3000/api/locations/665b32738fc81e4caa2f0dc4' \
         --header 'Content-Type: application/json' \
         --data-raw '{
@@ -88,17 +84,14 @@ This project is a RESTful API for managing locations and retrieving weather fore
 
     E] Delete a Location
     
-        ```sh
         curl --location --request DELETE 'http://localhost:3000/api/locations/665bf884d411955856fd13d4'
 
     F] Getting Weather Data by Location
     
-        ```sh
         curl --location --request GET 'http://localhost:3000/api/weather/665b326f8fc81e4caa2f0dc2'
 
     G] Getting Historical Weather Data
     
-        ```sh
         curl --location --request GET 'http://localhost:3000/api/history/3?location=mumbai'
 
 
